@@ -1,0 +1,15 @@
+#sub {
+    width: 25%;
+    opacity: 25%;
+    margin-left: 0px;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    size: 20%;
+    height: auto;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
