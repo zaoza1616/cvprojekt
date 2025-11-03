@@ -1,3 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Bitcount+Grid+Single:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/*BBH Sans Hegarty, Playfair Display, Bitcount Grid Single */
+:root {
+    --primary-color: #000000;
+    --primary-light: #ffffff;
+    --muted-gray: #a7a7a7;
+    --container-background: #f9f9f9;
+    --heading-font: "Playfair Display", serif;
+    --body-font: "Bitcount Grid Single", sans-serif;
+    --link-fonts: "BBH Sans Hegarty", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+header {
+    margin-top: 2rem;
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-image-container img {
+    transition: opacity 0.3s ease-in-out;
+}
+
 #sub {
     width: 25%;
     opacity: 25%;
@@ -6,11 +46,15 @@
 
 .profile-picture {
     border-radius: 50%;
-    size: 20%;
-    height: auto;
-    width: 100px;
+    width:6.25rem;
+    height:6.25rem;
+    object-fit: cover;
     margin-top: 20px;
     margin-left: 5px;
+}
+
+.profile {
+    flex: 1;
 }
 
 @media (max-width: 480px) {
