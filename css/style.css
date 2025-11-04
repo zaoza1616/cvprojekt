@@ -232,7 +232,7 @@ footer {
     display:inline-block;
     width: 16px;
     height: 16px;
-    background: url(~/images/kysimark.png) no-repeat center center;
+    background: url(../images/kysimark.png) no-repeat center center;
     background-size: contain;
     margin-left: 5px;
     cursor: pointer;
