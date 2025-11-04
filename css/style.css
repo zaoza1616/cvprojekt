@@ -176,3 +176,86 @@ footer {
     flex:1;
     margin-left: 20px;
 }
+
+.lang-table {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:5px;
+    margin:20px auto;
+    align-items: start;
+}
+
+.lang-table ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lang-table li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    position: relative;
+}
+
+.lang-skills {
+    transform: translateY(36px);
+    list-style: none;
+    padding: 0;
+}
+
+.lang-skills li {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding: 8px;
+    line-height: 19.3px;
+}
+
+.lang-skills li,
+.lang-data1 li,
+.lang-data2 li {
+    padding:8px;
+    border:1px solid #eee;
+    text-align: center;
+}
+
+.lang-data1 li:first-child,
+.lang-data2 li:first-child {
+    text-align: left;
+    font-weight: bold;
+}
+
+
+.info-icon {
+    display:inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(/images/kysimark.png) no-repeat center center;
+    background-size: contain;
+    margin-left: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.info-icon::after {
+    content:attr(data-hint);
+    position:absolute;
+    left:50%;
+    bottom:125%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.8);
+    color:#fff;
+    padding:6px 10px;
+    white-space: nowrap;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 10;
+}
+
+.info-icon:hover::after{
+    opacity: 1;
+}
