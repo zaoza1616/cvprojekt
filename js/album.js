@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     i = 0
                 }
 
-                targetImage.srv = basePath + album[i];
+                targetImage.src = basePath + album[i];
                 i++;
 
 
